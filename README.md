@@ -20,6 +20,7 @@ See liittle example:
     user            =>  'username',
     group           =>  'groupname',
     pidfile         =>  'path/to/pidfile',
+    name_pattern    =>  'my_daemon_process_name'
     );
     $daemon->daemonize();
 
@@ -36,6 +37,7 @@ Constructor, returns System::Daemon object. Available parameters:
  * user            =>   desired username
  * group           =>   desired groupname
  * pidfile         =>   '/path/to/pidfile'
+ * name_pattern    =>  name pattern to look if ps output,
 
 ### daemonize
     
