@@ -22,12 +22,14 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "System::Process" : "0",
             "Test::More" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "0",
+            "System::Process" : "0.15"
          }
       },
       "runtime" : {
@@ -40,9 +42,9 @@
    "resources" : {
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/justnoxx/system-daemon",
-         "web" : "https://github.com/justnoxx/system-daemon.git"
+         "url" : "https://github.com/justnoxx/system-daemon.git",
+         "web" : "https://github.com/justnoxx/system-daemon"
       }
    },
-   "version" : "0.11"
+   "version" : "0.12"
 }

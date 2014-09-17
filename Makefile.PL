@@ -12,10 +12,12 @@ my %make_params = (
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
-        'ExtUtils::MakeMaker' => 0,
+        'ExtUtils::MakeMaker'   =>  0,
+        'System::Process'       =>  0.15,
     },  
     BUILD_REQUIRES => {
-        'Test::More' => 0,
+        'Test::More'        =>  0,
+        'System::Process'   =>  0,
     },
     "test" => {
         "TESTS" => "t/*.t"
@@ -33,8 +35,8 @@ if ($ExtUtils::MakeMaker::VERSION >= 6.46) {
         resources => {
             repository => {
                 type    => 'git',
-                url     => 'https://github.com/justnoxx/system-daemon',
-                web     => 'https://github.com/justnoxx/system-daemon.git',
+                web     => 'https://github.com/justnoxx/system-daemon',
+                url     => 'https://github.com/justnoxx/system-daemon.git',
             },
         },
     };
